@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f8f8f8;
+    color: #222;
+}
+
+.navbar {
+    background: #e63946;
+    padding: 0.5em 0;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.navbar li {
+    margin: 0 1.5em;
+}
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.2s;
+}
+.navbar a:hover {
+    color: #f1faee;
+}
+
+header {
+    text-align: center;
+    padding: 2em 0 1em 0;
+    background: #f1faee;
+    border-bottom: 2px solid #e63946;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #e63946;
+}
+header p {
+    font-size: 1.2em;
+    color: #457b9d;
+}
+
+.restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    padding: 2em 1em;
+}
+.restaurant-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* empuja el botón hacia el fondo */
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(70,70,70,0.08);
+    width: 260px;
+    padding: 1.2em;
+    text-align: center;
+    transition: transform 0.2s;
+    min-height: 360px; /* altura uniforme para alinear botones */
+}
+.restaurant-card:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 4px 16px rgba(70,70,70,0.12);
+}
+.restaurant-card img {
+    width: 100%;
+    height: 140px; /* más espacio visual consistente */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1em;
+    background: #eee;
+}
+.restaurant-card h2 {
+    margin: 0.5em 0 0.3em 0;
+    color: #e63946;
+    font-size: 1.3em;
+}
+.restaurant-card p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 1em;
+}
+.restaurant-card button {
+    background: #e63946;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.restaurant-card button:hover {
+    background: #d90429;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background: #f1faee;
+    color: #222;
+    border-top: 2px solid #e63946;
+    margin-top: 2em;
+}
+
+
+@media (max-width: 800px) {
+    .restaurants {
+        flex-direction: column;
+        align-items: center;
+    }
+    .restaurant-card {
+        width: 90%;
+        max-width: 350px;
+    }
+}
