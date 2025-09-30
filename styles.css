@@ -6,15 +6,27 @@ body {
 }
 
 .navbar {
+    display: flex;
+    align-items: center;
     background: #e63946;
     padding: 0.5em 0;
+}
+.logo-container {
+    margin-left: 1em;
+}
+.logo {
+    height: 40px;
+    width: auto;
+    vertical-align: middle;
 }
 .navbar ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 0;
+    flex: 1;
 }
 .navbar li {
     margin: 0 1.5em;
